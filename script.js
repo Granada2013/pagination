@@ -30,11 +30,11 @@ const listWrapper = document.getElementById('list'),
       selector = document.querySelector('.selector');
 
 let rowsPerPage = +selector.value;
-showPPagination(rowsPerPage);
+showPagination(rowsPerPage);
 
 selector.addEventListener('change', () => {
   rowsPerPage = +selector.value;
-  showPage(rowsPerPage);
+  showPagination(rowsPerPage);
 })
 
 
